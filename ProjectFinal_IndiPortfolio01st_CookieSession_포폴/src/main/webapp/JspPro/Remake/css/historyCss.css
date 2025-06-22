@@ -1,0 +1,428 @@
+#historyMainWrapper {
+	width: 1600px;
+	margin: auto;
+	background-color: #f4f4f4;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#historyMainWrapper main {
+	background: white;
+	width: 90%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+#historyMainWrapper>main>p {
+	font-size: 40px;
+	font-weight: bold;
+	color: #242424;
+	margin: 0px;
+	padding: 40px;
+	padding-bottom: 20px;
+}
+
+#div_calendar {
+	width: 550px;
+	margin-top: 50px;
+	margin-left: 50px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#div_table {
+	vertical-align: top;
+	width: 760px;
+	display: inline-block;
+	margin-left: 25px;
+	margin-top: 27px;
+}
+
+#historyWrapper div.linkMenu {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	margin-top: 18px;
+}
+
+#historyWrapper a {
+	text-decoration: none;
+	cursor: pointer;
+	color: gray;
+	margin-left: 5px;
+}
+
+#historyWrapper a:hover {
+	color: #242424;
+	transition: 0.3s ease;
+}
+
+#historyWrapper p.tableTitle, #historyWrapper p.delTableTitle {
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 23.5px;
+	margin-left: 3px;
+	display: inline-block;
+}
+
+#historyWrapper .addTable, #historyWrapper .delTable, #historyWrapper .selTable,
+	#historyWrapper .updTable { /* 테이블은 공통으로 가져가기 */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	width: 760px;
+	margin-top: 0px;
+	padding-bottom: 10px;
+}
+
+#historyWrapper .addTable, #historyWrapper .updTable {
+	padding-top: 10px;
+	padding-left: 25px;
+}
+
+#historyWrapper .delTable {
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+#historyWrapper th {
+	font-size: 18px;
+	height: 50px;
+}
+
+/*selTable*/
+#historyWrapper .selTable .mItem {
+	font-weight: bold;
+	font-size: 20px;
+	text-indent: 10px;
+	padding-bottom: 12px;
+	padding-left: 21px;
+	width: auto;
+}
+
+#historyWrapper .selTable .mUpdDel {
+	padding-bottom: 12px;
+	width: 110px;
+}
+
+#historyWrapper .selTable .mOutcome, #historyWrapper .selTable .mIncome
+	{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: right;
+	padding-top: 0;
+	padding-bottom: 12px;
+}
+
+#historyWrapper .selTable .mOutcome {
+	color: #FF3333;
+}
+
+#historyWrapper .selTable .mIncome {
+	color: #3333FF;
+}
+
+#historyWrapper .linkUpdDel {
+	width: 22%;
+	text-align: right;
+	padding-right: 25px;
+	padding-bottom: 12px;
+}
+
+#historyWrapper .selTable .mDate {
+	color: gray;
+	font-size: 20px;
+	text-indent: 20px;
+	text-align: left;
+	padding: 15px 10px 0px 10px;
+}
+
+#historyWrapper hr {
+	width: 95%;
+	margin-top: 15px;
+	border: none;
+	background-color: lightgray;
+	height: 2px;
+}
+
+#historyWrapper .addTable td:first-child, #historyWrapper .updTable td:first-child
+	{
+	width: 150px;
+}
+
+#historyWrapper input[type="text"], #historyWrapper input[type="date"] {
+	width: 90%;
+	height: 30px;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+#historyWrapper label {
+	display: inline-block;
+	width: 100px;
+	position: relative;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 20px 10px;
+	text-indent: 10px;
+}
+
+#historyWrapper label::after {
+	position: absolute;
+	right: 0px;
+	content: "|";
+}
+
+#historyWrapper .delTable td:first-child { /* 체크박스 */
+	text-align: center;
+	width: 70px;
+}
+
+#historyWrapper .delTable td:nth-child(2) { /* 날짜 */
+	text-align: center;
+	width: 100px;
+}
+
+#historyWrapper .delTable td:last-child { /* 금액 */
+	text-align: center;
+	width: 140px;
+}
+
+#historyWrapper .delTable tr:last-child td {
+	padding-bottom: 10px;
+}
+
+#historyWrapper .delTable .mDate {
+	text-align: center;
+	width: 100px;
+}
+
+#historyWrapper .delTable .mItem, #historyWrapper .delTable .mOutcome,
+	#historyWrapper .delTable .mIncome {
+	text-align: center;
+	font-weight: bold;
+}
+
+#historyWrapper .delTable .mOutcome {
+	color: #FF3333;
+}
+
+#historyWrapper .delTable .mIncome {
+	color: #3333FF;
+}
+
+#historyWrapper .incomeButton, #historyWrapper .outcomeButton {
+	font-size: 18px;
+	font-weight: bold;
+	width: 42%;
+	height: 35px;
+	margin-right: 18px;
+	margin-top: 3px;
+	background-color: #EEEEEE;
+	line-height: 35px;
+}
+
+#historyWrapper .incomeButton:hover {
+	background-color: skyblue;
+}
+
+#historyWrapper .outcomeButton:hover {
+	background-color: pink;
+}
+
+#historyWrapper .saveButton, #historyWrapper .trashButton {
+	height: 50px;
+	margin: 15px;
+	line-height: 45px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+#historyWrapper .saveButton {
+	width: 75%;
+	margin-right: 5px;
+	background-color: lightgreen;
+}
+
+#historyWrapper .trashButton {
+	width: 15%;
+	margin-left: 3px;
+	text-indent: 2px;
+	background-color: #BBBBBB;
+}
+
+#historyWrapper .incomeButton, #historyWrapper .outcomeButton,
+	#historyWrapper .saveButton, #historyWrapper .trashButton {
+	border: none;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#historyWrapper .incomeButton:hover, #historyWrapper .outcomeButton:hover,
+	#historyWrapper .saveButton:hover, #historyWrapper .trashButton:hover {
+	text-shadow: -2px -2px white, 2px -2px white, -2px 2px white, 2px 2px
+		white, -2px 0px white, 2px 0px white, 0px -2px white, 0px 2px white;
+	box-shadow: 3px 3px 3px lightgray;
+	transition: 0.3s ease;
+}
+
+#historyWrapper .buttonWrapper {
+	text-align: center;
+	margin-left: 0px; /*690px;*/
+	margin-top: 20px;
+	width: 750px;
+	/*display: flex;         */
+	display: inline-block;
+	/*justify-content: space-between; */
+}
+
+#historyWrapper div.buttonWrapper .saveButton {
+	margin-left: 3px;
+	width: 270px;
+}
+
+#historyWrapper .selTable select {
+	display: inline-block;
+	width: 92%;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: #242424;
+	background-color: transparent;
+	margin: 27px 0px 10px 27px;
+}
+
+#historyWrapper .updTable select, #historyWrapper .addTable select {
+	height: 30px;
+	font-size: 16px;
+	background-color: transparent;
+	margin-top: 7px;
+	width: 40%;
+}
+
+#historyWrapper .updTable #customCategory, #historyWrapper .addTable #customCategory
+	{
+	width: 47%;
+	margin-left: 12px;
+	height: 30px;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+#historyWrapper .delSelect {
+	font-weight: bold;
+	display: inline-display;
+}
+
+#historyWrapper .delTable hr {
+	margin-bottom: -3px;
+}
+
+#historyWrapper option {
+	font-size: 12px;
+	font-weight: bold;
+	color: #343434;
+}
+
+#historyWrapper td.mCategory {
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#historyWrapper #resultMsg {
+	text-align: right;
+}
+
+#historyWrapper .linkMenu form {
+	display: inline-block;
+}
+
+body.dark-theme #historyMainWrapper {
+	background-color: #121212;
+	color: white;
+}
+
+body.dark-theme #historyMainWrapper main {
+	background-color: #1e1e1e;
+	color: white;
+}
+
+body.dark-theme #historyMainWrapper p {
+	color: white;
+}
+
+body.dark-theme #historyWrapper a {
+	color: lightgreen;
+}
+
+body.dark-theme #historyWrapper input, body.dark-theme #historyWrapper select,
+	body.dark-theme #historyWrapper option, body.dark-theme #historyWrapper textarea
+	{
+	background-color: #2e2e2e;
+	color: white;
+	border: 1px solid gray;
+}
+
+body.dark-theme #historyWrapper .selTable .mOutcome {
+	color: #FF8888;
+}
+
+body.dark-theme #historyWrapper .selTable .mIncome {
+	color: #88AAFF;
+}
+
+#historyWrapper .settlementBox {
+	background-color: #ffffff;
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+	padding: 20px 25px;
+	margin-top: 15px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#historyWrapper .settlementTitle {
+	font-size: 22px;
+	font-weight: bold;
+	color: #222;
+	margin-bottom: 15px;
+}
+
+#historyWrapper .settlementItem {
+	font-size: 18px;
+	margin: 6px 0;
+}
+
+#historyWrapper .settlementSubTitle {
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+}
+
+#historyWrapper .settlementList {
+	padding-left: 25px;
+	margin-top: 10px;
+}
+
+#historyWrapper .settlementListItem {
+	font-size: 15px;
+	margin-bottom: 4px;
+}
+
+body.dark-theme #historyWrapper .settlementBox {
+	background-color: #1e1e1e;
+	color: white;
+	border: 1px solid gray;
+}
+
+body.dark-theme #historyWrapper .settlementSubTitle, body.dark-theme #historyWrapper .settlementTitle
+	{
+	color: lightgreen;
+}

@@ -1,0 +1,126 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+	color: #004500;
+	margin: auto;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+form {
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+	position: relative;
+}
+
+.menu {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	color: #038b00;
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 10px;
+	width: 600px;
+	border: 2px solid #038b00;
+}
+
+td {
+	border: 3px solid #038b00;
+	padding: 5px;
+}
+
+td.label {
+	background-color: #038b00;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 100px;
+}
+
+.input {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	border: 1px solid #888;
+	border-radius: 5px;
+}
+
+.input.full {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 300px;
+	box-sizing: border-box;
+	padding: 5px;
+	resize: none;
+	font-family: inherit;
+}
+
+.image-cell {
+	width: 150px;
+	height: 300px;
+	padding: 0;
+	border: 3px solid #038b00;
+	overflow: hidden; /* 이미지가 넘치면 잘리도록 설정 */
+}
+
+.image-cell img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* 이미지가 부모 요소를 꽉 채우도록 설정 */
+	display: block;
+}
+
+.form-actions {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.form-actions input[type="submit"], .form-actions input[type="reset"] {
+	background-color: #038b00;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0 5px;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+.form-actions input[type="submit"]:hover, .form-actions input[type="reset"]:hover
+	{
+	background-color: #026f00;
+}
+
+.buttons {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.buttons button {
+	background-color: #038b00;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0 5px;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+.buttons button:hover {
+	background-color: #026f00;
+}

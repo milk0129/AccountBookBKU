@@ -1,0 +1,164 @@
+html {
+	overflow-y: scroll;
+}
+
+#footerWrapper, #mainWrapper {
+	width: 1600px;
+	margin: auto;
+}
+
+/* 헤더 */
+#mainWrapper header {
+	float: left;
+	width: 100%;
+	padding-top: 20px;
+	border-bottom: none;
+	background-color: rgb(209, 254, 192);
+}
+
+/* 메뉴 */
+#mainWrapper nav {
+	width: 95%;
+	margin: auto;
+	height: 75px;
+}
+
+/* li를 감싸는 요소 */
+#mainWrapper ul {
+	list-style: none;
+	float: right;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+/* 메뉴 항목 */
+#mainWrapper .li_menu {
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	margin-top: 16px;
+	margin-left: 20px;
+	padding: 5px 0px;
+}
+
+#mainWrapper .li_menu:hover {
+	background-color: lightgreen;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+/* 로그아웃 항목 */
+#mainWrapper .logout {
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	margin-left: 20px;
+	padding: 5px 0px;
+}
+
+/* 링크 스타일 */
+#mainWrapper .li_menu a {
+	text-decoration: none;
+	color: black;
+}
+
+/* 링크 hover */
+#mainWrapper a:hover {
+	cursor: pointer;
+}
+
+/* 로고 이미지 */
+#mainWrapper img {
+	width: 100px;
+	height: 50px;
+	float: left;
+	margin-top: 5px;
+}
+
+/* 공통 버튼 */
+#mainWrapper button {
+	border-radius: 20px;
+	width: 80px;
+	padding: 5px;
+	margin: 5px 0px 5px 20px;
+	background-color: rgb(0, 92, 5);
+	border: none;
+	color: lightgreen;
+	font-size: 15px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#mainWrapper button:hover {
+	opacity: 0.8;
+}
+
+/* 로그인 버튼 */
+#mainWrapper .login-button {
+	background-color: rgb(0, 92, 5);
+	color: lightgreen;
+}
+
+/* 로그아웃 버튼 */
+#mainWrapper .logout-button {
+	margin: 0;
+	background-color: rgb(150, 0, 0);
+	width: 80px;
+	color: white;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+#mainWrapper .logout-button:hover {
+	background-color: blue;
+}
+
+/* 구분선 영역 */
+#footerWrapper .li_outline, #mainWrapper .li_outline {
+	clear: both;
+	width: 100%;
+	height: 10px;
+	background-color: rgb(0, 92, 5);
+}
+
+/* 숨김 처리된 hr */
+#mainWrapper .visible {
+	visibility: hidden;
+}
+
+#footerWrapper .footer {
+	width: 100%;
+	text-align: right;
+	background-color: rgb(209, 254, 192);
+}
+
+#footerWrapper .footer p {
+	text-align: center;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+/* 다크모드 */
+body.dark-theme {
+	background-color: #121212;
+}
+
+body.dark-theme a {
+	color: lightgreen;
+}
+
+/* 테마 버튼 전용 스타일 */
+#mainWrapper .theme-toggle {
+	margin: -4px;
+	background-color: black;
+	width: 80px;
+	color: white;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+#mainWrapper .theme-toggle:hover {
+	background-color: #333;
+}
