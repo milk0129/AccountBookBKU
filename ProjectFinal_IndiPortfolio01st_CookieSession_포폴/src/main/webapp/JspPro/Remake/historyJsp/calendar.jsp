@@ -44,8 +44,8 @@
         curMonth = date.getMonth() + 1;
         curDate = date.getDate();
 
-        // 1. URL에 yearMonth 있으면 초기 월로 반영
-        if (ParamYearMonth !== null && ParamYearMonth !== "") {
+        // 1. URL에 yearMonth 있으면 초기 월로 반영 (문자열 "null" 도 필터링)
+        if (ParamYearMonth && ParamYearMonth !== "null" && ParamYearMonth !== "") {
             curMonth = parseInt(ParamYearMonth);
         }
 
