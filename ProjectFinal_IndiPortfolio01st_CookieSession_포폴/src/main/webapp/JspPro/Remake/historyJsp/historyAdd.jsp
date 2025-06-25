@@ -86,14 +86,13 @@
 							<option value="통신비">통신비</option>
 							<option value="문화생활">문화생활</option>
 
-							<!-- 사용자 추가 카테고리
 		<%
 		    for (String cat : userCategories) {
 		%>
 		                            <option value="<%= cat %>"><%= cat %></option>
 		<%
 		    }
-		%> -->
+		%> 
 							<option value="기타">기타 (직접입력)</option>
 					</select> <input type="text" id="customCategory" name="customCategory"
 						placeholder="직접 입력" style="display: none"></td>

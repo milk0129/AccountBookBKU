@@ -74,10 +74,8 @@
             curMonth = 12;
         }
 
-        // ✅ 여기서 formattedMonth를 직접 선언
         const formattedMonth = curMonth < 10 ? "0" + curMonth : "" + curMonth;
 
-        // ✅ 두 필드 모두 갱신
         document.calendarFrm.yearMonth.value = formattedMonth;
         document.calendarFrm.selectedMonth.value = formattedMonth;
 

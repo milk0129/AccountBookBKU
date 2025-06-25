@@ -105,20 +105,15 @@ function toggleCustomCategory() {
 }
 
 function submitWithMonth() {
-    const form = document.getElementById('myForm');
-    const filter = document.querySelector('select[name="filter"]').value;
-    const monthInput = document.getElementById("selectedMonth");
-
-    const ymRaw = document.getElementById("yearMonth").value; // 예: "4월" 또는 "12월"
-
-    // "월" 문자 제거하고 숫자만 추출
-    const monthNumber = ymRaw.replace("월", "").trim();
-
-    if (filter === "결산" && monthNumber) {
-        monthInput.value = monthNumber.padStart(2, '0'); // 예: "04", "12"
-    } else {
-        monthInput.value = "";
+    // 현재 달력의 yearMonth 값을 가져와서 hidden 필드에 복사
+	const calendarInput = document.querySelector("#calendarFrm #yearMonth");
+	const monthFromCalendar = calendarInput ? calendarInput.value : "";
+    // history 폼 내부 input에 반영
+    if (monthFromCalendar) {
+        document.querySelector("#myForm #yearMonth").value = monthFromCalendar;
+        document.querySelector("#myForm #selectedMonth").value = monthFromCalendar;
     }
 
-    form.submit();
+    // 최종적으로 form 전송
+    document.getElementById("myForm").submit();
 }

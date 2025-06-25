@@ -6,21 +6,6 @@
 <%@ page import="java.util.LinkedHashMap"%>
 
 <script src="../jas/hisSel.js"></script>
-<script>
-function submitWithMonth() {
-    // 현재 달력의 yearMonth 값을 가져와서 hidden 필드에 복사
-    const monthFromCalendar = document.querySelector("#calendarFrm #yearMonth")?.value;
-
-    // history 폼 내부 input에 반영
-    if (monthFromCalendar) {
-        document.querySelector("#myForm #yearMonth").value = monthFromCalendar;
-        document.querySelector("#myForm #selectedMonth").value = monthFromCalendar;
-    }
-
-    // 최종적으로 form 전송
-    document.getElementById("myForm").submit();
-}
-</script>
 
 <div id="historyWrapper">
 
